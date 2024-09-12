@@ -1,6 +1,5 @@
 <?php
 $fileName = 'sample.txt';
-$fileContents = file_get_contents($fileName);
 
 
 if (file_exists($fileName)) {
@@ -8,6 +7,7 @@ if (file_exists($fileName)) {
     
     
  file_get_contents($fileName);
+    $fileContents = file_get_contents($fileName);
     if ($fileContents === false) {
         echo "Error reading the file.\n";
     } else {
@@ -37,7 +37,6 @@ if (file_exists($fileName)) {
         echo "File created and content written.<br>";
         
 
-        
         if ($fileContents === false) {
             echo "Error reading the file.<br>";
         } else {
